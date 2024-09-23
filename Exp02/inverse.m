@@ -1,0 +1,16 @@
+M1 = [1, 2; 3, 4];
+M2 = [5, 6; 7, 8];
+matrix_product = M1 * M2;
+inverse_M1 = inv(M1);
+transpose_M2 = M2';
+concatenated_matrices = [M1, M2];
+determinant_M2 = det(M2);
+fprintf('Matrix Multiplication (M1 * M2):\n');
+disp(matrix_product);
+fprintf('Inverse of M1:\n');
+disp(inverse_M1);
+fprintf('Transpose of M2:\n');
+disp(transpose_M2);
+fprintf('Concatenated Matrices (M1 and M2):\n');
+disp(concatenated_matrices);
+fprintf('Determinant of M2: %.2f\n', determinant_M2);

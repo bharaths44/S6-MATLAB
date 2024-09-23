@@ -1,0 +1,14 @@
+a=5;
+b=3;
+sum=a+b;
+disp(sum);
+diff=a-b;
+disp(diff);
+r=rem(a,b);
+disp(r);
+q=a/b;
+disp(q)
+disp(a>b)
+disp(a<b)
+disp(a==b)
+disp(a~=b)
