@@ -20,10 +20,7 @@ function fib_sequence = fibonacci(n)
 end
 
 n = input('Enter the number of terms for the Fibonacci sequence: ');
-
-% Call the fibonacci function
 fibSequence = fibonacci(n);
-
 fprintf('The first %d terms of the Fibonacci sequence are:\n', n);
 disp(fibSequence);
 
