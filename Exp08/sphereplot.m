@@ -1,25 +1,13 @@
-% Define parameters for the sphere
-t = linspace(0, pi, 50); % From 0 to pi
-s = linspace(0, 2*pi, 50); % From 0 to 2*pi
-
-% Create meshgrid for the parameters
+t=linspace(0,2*pi,50);
+s=linspace(0,2*pi,50);
 [T, S] = meshgrid(t, s);
-
-% Parametric equations for the sphere
-x = cos(T) .* cos(S);
-y = cos(T) .* sin(S);
-z = sin(T);
-
-% Create a 3D surface plot for the sphere
-figure;
-surf(x, y, z); % 3D surface plot of the sphere
-shading interp; % Interpolated shading
-axis equal; % Equal scaling on all axes
-
-% Add titles and labels
+x=cos(T).*cos(S);
+y=cos(T).*sin(S);
+z=sin(T);
+surf(x,y,z)
 title('3D Sphere Plot');
-xlabel('X-axis');
-ylabel('Y-axis');
-zlabel('Z-axis');
-colorbar; % Add color bar
-grid on; % Add grid
+xlabel('x Axis');
+ylabel('y Axis');
+zlabel('z Axis');
+axis equal;
+colorbar;
