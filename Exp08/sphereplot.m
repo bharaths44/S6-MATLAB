@@ -1,13 +1,22 @@
-t=linspace(0,2*pi,50);
-s=linspace(0,2*pi,50);
-[T, S] = meshgrid(t, s);
-x=cos(T).*cos(S);
-y=cos(T).*sin(S);
-z=sin(T);
-surf(x,y,z)
-title('3D Sphere Plot');
+x=linspace(-5,5,50);
+y=linspace(-5,5,50);
+[X,Y]=meshgrid(x,y); 
+z=sin(sqrt(X.^2 + Y.^2)); 
+surf(X,Y,z) 
+colorbar 
+title('3D Surface Plot'); 
+xlabel('x Axis'); 
+ylabel('y Axis');
+zlabel('z Axis'); 
+figure 
+plot3(X,Y,z);
+title('3D line Plot');
+xlabel('x Axis');
+ylabel('y Axis');
+zlabel('z Axis'); 
+figure 
+scatter3(X,Y,z);
+title('3D scatter Plot');
 xlabel('x Axis');
 ylabel('y Axis');
 zlabel('z Axis');
-axis equal;
-colorbar;
